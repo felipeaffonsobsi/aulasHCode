@@ -114,6 +114,19 @@
             $this->setDessenha($password);
         }
 
+        public function update($login, $password){
+
+            $this->setDeslogin($login);
+            $this->setDessenha($password);
+
+            $sql = new Sql();
+            $sql->queryTeste("UPDATE tb_usuarios SET deslogin = :LOGIN, dessenha = :PASSWORD WHERE idusuario = :ID", array(
+                ':LOGIN'=>$this->getDeslogin(),
+                ':PASSWORD'=>$this->getDessenha(),
+                ':ID'=>$this->getIdusuario()
+            ));
+        }
+
     }
 
 
