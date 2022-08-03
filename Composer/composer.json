@@ -1,0 +1,20 @@
+{
+    "name": "hcodebr/composer",
+    "description": "Aula de PHP 7",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Hcodebr\\Composer\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Felipe Affonso Da Silva Rocha",
+            "email": "felipeaffonsobsi@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "monolog/monolog":"1.0.*"
+    }
+}
